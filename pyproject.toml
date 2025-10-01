@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "endstone_chest_form_example"
+version = "1.0.0"
+authors = [{ name = "GlacieTeam" }]
+description = "An Example Chest Form for Endstone"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["endstone", "chest_form"]
+dependencies = [
+    "chest_form_api_endstone >= 1.0.0", # Add chest_form_api_endstone as a dependence
+]
+
+[project.urls]
+Homepage = "https://github.com/GlacieTeam/endstone-chest-form-example"
+
+[project.entry-points."endstone"]
+chest_form_example = "endstone_chest_form_example:Entry"
